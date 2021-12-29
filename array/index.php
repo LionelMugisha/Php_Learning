@@ -49,4 +49,12 @@ $liverpoolPlayer = [
 $liverpoolPlayer['Coach'] = 'Jurgen Klopp';  //add an element in the associative array
 unset($liverpoolPlayer['Sub']); //delete an element in the associative array
 
+$todo = [
+    'title' => 'Washing clothes',
+    'due' => 'on 01/01/2022',
+    'assigned_to' => 'My little sister',
+    'completed' => 'Not'
+];
+
+
 require 'index.view.php';

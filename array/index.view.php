@@ -55,5 +55,14 @@
             <?php endforeach; ?>
         </ul>
 
+        <!-- displaying element from the associative array from todo array -->
+        <ul>
+            <h3>List of Todo Task:</h3>
+            <?php 
+            foreach ($todo as $key => $todos) : ?>
+                <li><strong><?= "$key = "; ?></strong><?= $todos; ?> </li>   
+            <?php endforeach; ?>
+        </ul>
+
 </body>
 </html>
