@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Document</title>
+    <title>Booleans</title>
 </head>
 <body>
         <!-- displaying element from the associative array from todo array -->
