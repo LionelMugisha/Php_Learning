@@ -1,11 +1,11 @@
 <?php
 
-$config = require 'Config.php';
+$config = require 'config.php';
 
 require 'db/Connection.php';
 
 require 'db/QueryBuilder.php';
 
 return new QueryBuilder(
-    Connection::make($config['database'])
+    Connection::make($config['databaseconfiguration'])
 );
