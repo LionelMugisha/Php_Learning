@@ -1,15 +1,5 @@
-<html>
-<head>
-    <title>PDO in PHP</title>
-</head>
-<body>
-    <!-- <nav>
-        <ul>
-            <li><a href="index.php">Home</a></li>
-            <li><a href="about.php">About</a></li>
-            <li><a href="contact.php">Contact</a></li>
-        </ul>
-    </nav> -->
+<?php require('partials/head.php') ?>
+
     <ul>
         <?php foreach ($task as $tasks) : ?>
             <li>
@@ -22,5 +12,4 @@
         <?php endforeach ?>
     </ul>
 
-</body>
-</html>
+<?php require('partials/footer.php') ?>

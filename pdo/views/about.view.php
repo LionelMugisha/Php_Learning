@@ -1,8 +1,6 @@
-<html>
-    <head>
-        <title>PDO Assignment</title>
-    </head>
-    <body>
-        <p>About us</p>
-    </body>
-</html>
+<?php require('partials/head.php'); ?>
+
+    <p>About us</p>
+
+<?php require('partials/footer.php'); ?>
+
