@@ -2,7 +2,7 @@
 
 // var_dump('Your name is '. $_POST['name']);
 
-$app['database']->insert('users',[
+App::get('database')->insert('users',[
 	'name' => $_POST['name']
 ]);
 

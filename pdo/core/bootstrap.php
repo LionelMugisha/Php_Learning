@@ -1,17 +1,19 @@
 <?php
 
-$app = [];
+// $app = [];
 
-$app['config'] = require 'Config.php';
+// $app['config'] = require 'Config.php';
 
-require 'core/Router.php';
+// $app['database'] = new QueryBuilder(
+//     Connection::make($app['config']['database'])
+// );
 
-require 'core/Request.php';
+App::bind('config', $config = require'Config.php');
 
-require 'core/db/Connection.php';
+// die(var_dump(App::get('config')));
 
-require 'core/db/QueryBuilder.php';
+// $config = App::get('config'); //get the configuration array
 
-$app['database'] = new QueryBuilder(
-    Connection::make($app['config']['database'])
-);
+App::bind('database', new QueryBuilder(
+    Connection::make($config['database'])
+));
